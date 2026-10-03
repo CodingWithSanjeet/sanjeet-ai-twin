@@ -1,7 +1,7 @@
 [project]
 name = "ai-twin"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI Digital Twin of Sanjeet Kumar: a Gradio + OpenAI chat app grounded in his LinkedIn profile, with function calling for lead capture."
 readme = "README.md"
 authors = [
     { name = "CodingWithSanjeet", email = "sanjeetkumar186@gmail.com" }

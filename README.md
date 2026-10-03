@@ -1,13 +1,13 @@
 
 # ⚡ AI Digital Twin — Sanjeet Kumar
 
-An interactive AI Digital Twin web application built with **Gradio 6**, **OpenAI GPT-4o / GPT-5**, and **Python**. Grounded in professional career context, resume data, and LinkedIn history, this AI twin allows visitors to chat about experience, projects, technical skills, and background.
+An interactive AI Digital Twin web application built with **Gradio 6**, the **OpenAI API** (default model `gpt-5.4-mini`, configurable via `MODEL_NAME`), and **Python 3.12+**. Its answers are grounded in my LinkedIn profile export (`Linkedin.pdf`) and a written career summary (`summary.txt`), so visitors can chat about my experience, projects, technical skills, and background.
 
 ---
 
 ## ✨ Features
 
-- **Grounded AI Persona**: Answers career, background, and technical questions strictly using verified resume and LinkedIn context.
+- **Grounded AI Persona**: Answers career, background, and technical questions using only the LinkedIn PDF and career summary loaded into the system prompt, and steers off-topic questions back to professional topics.
 - **Function Calling (Tools)**:
   - `record_user_details`: Collects visitor contact interest and sends real-time notifications via Pushover.
   - `record_unknown_question`: Logs unanswered questions to track missing knowledge gaps.
@@ -30,15 +30,17 @@ An interactive AI Digital Twin web application built with **Gradio 6**, **OpenAI
 ## 📂 Project Structure
 
 ```text
-ai-twin/
+sanjeet-ai-twin/
 ├── app.py                      # Main entrypoint
 ├── pyproject.toml              # UV / Python dependencies
 ├── requirements.txt            # Dependency specs for deployment
-├── .env                        # Environment variables & configuration
+├── .env                        # Your local secrets & config (not committed)
 ├── src/
 │   └── ai_twin/
 │       ├── app.py              # Main Gradio Blocks UI layout & chat handler
 │       ├── context.py          # System prompt & PDF context loader
+│       ├── Linkedin.pdf        # LinkedIn profile export used as grounding context
+│       ├── summary.txt         # Career summary used as grounding context
 │       ├── tools.py            # OpenAI function tools & Pushover integration
 │       ├── styles.py           # Custom CSS styling, theme, and animations
 │       └── assets/             # Profile photo & static media
@@ -67,7 +69,7 @@ PUSHOVER_TOKEN=your_pushover_app_token
 HF_TOKEN=your_huggingface_write_token
 
 # Application Configs
-MODEL_NAME=gpt-4o-mini
+MODEL_NAME=gpt-5.4-mini
 OWNER_NAME=Sanjeet Kumar
 OWNER_INITIALS=SK
 OWNER_ROLE=AI Engineer
@@ -86,7 +88,7 @@ Start the development server using `uv`:
 uv run app.py
 ```
 
-Open your browser at `http://127.0.0.1:7863`.
+Open your browser at `http://127.0.0.1:7860` (Gradio's default port; set `GRADIO_SERVER_PORT` to change it).
 
 ---
 
