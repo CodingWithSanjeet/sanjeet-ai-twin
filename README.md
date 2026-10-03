@@ -1,6 +1,8 @@
 
 # ⚡ AI Digital Twin — Sanjeet Kumar
 
+**🔗 Live demo: [sanjeet-ai-twin.onrender.com](https://sanjeet-ai-twin.onrender.com)** _(hosted on Render's free tier — the first load after inactivity may take ~30–60s to wake up)_
+
 An interactive AI Digital Twin web application built with **Gradio 6**, the **OpenAI API** (default model `gpt-5.4-mini`, configurable via `MODEL_NAME`), and **Python 3.12+**. Its answers are grounded in my LinkedIn profile export (`Linkedin.pdf`) and a written career summary (`summary.txt`), so visitors can chat about my experience, projects, technical skills, and background.
 
 ---
@@ -94,7 +96,13 @@ Open your browser at `http://127.0.0.1:7860` (Gradio's default port; set `GRADIO
 
 ## ☁️ Deployment
 
-Deploy directly to **Hugging Face Spaces**:
+The live demo runs on **[Render](https://render.com)** as a free Python web service (auto-deploys from `main`):
+
+- **Build command**: `pip install -r requirements.txt`
+- **Start command**: `PYTHONPATH=src python app.py`
+- **Environment variables**: `PYTHON_VERSION` (3.12.x), `GRADIO_SERVER_NAME=0.0.0.0`, `GRADIO_SERVER_PORT=7860`, `PORT=7860`, `MODEL_NAME`, plus the secrets `OPENAI_API_KEY`, `PUSHOVER_USER`, `PUSHOVER_TOKEN`
+
+Alternatively, deploy to **Hugging Face Spaces**:
 
 ```bash
 uv run gradio deploy --app-file app.py --title ai-twin
