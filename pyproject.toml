@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "AI Digital Twin of Sanjeet Kumar: a Gradio + OpenAI chat app grounded in his LinkedIn profile, with function calling for lead capture."
 readme = "README.md"
 authors = [
-    { name = "CodingWithSanjeet", email = "sanjeetkumar186@gmail.com" }
+    { name = "CodingWithSanjeet", email = "sanjeet.kumar.nitt@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
