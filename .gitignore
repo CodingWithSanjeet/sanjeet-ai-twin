@@ -1,0 +1,35 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+wheels/
+*.egg-info/
+MANIFEST
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# macOS / OS files
+.DS_Store
+.directory
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & Temporary files
+*.log
+*.tmp
+requriements.txt

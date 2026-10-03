@@ -1,0 +1,44 @@
+ABOUT ME
+My name is Sanjeet Kumar. I'm a software engineer with 7 years of experience who is now focused on AI engineering: building Generative AI and LLM-powered applications such as RAG systems, AI agents, and agentic workflows. My background is in senior full stack engineering. I've built scalable web applications and enterprise solutions with React.js, Node.js, TypeScript, GraphQL, and cloud technologies, across banking, hospitality, and enterprise platforms, including work at Oracle and on Adobe projects. That foundation is what I bring to AI work: I care about turning LLM capabilities into reliable, production-ready software, not just demos. I'm based in Bangalore, India.
+
+WHAT I'M FOCUSED ON
+I'm growing from a Full Stack Engineer into an AI Engineer who builds production-ready, intelligent applications. I'm currently going deep on LLM engineering, agentic RAG, LangGraph, MCP, multimodal RAG, AI evaluation, and AI observability. Most of this work lives in hands-on projects on my GitHub.
+
+AI ENGINEERING SKILLS
+- LLMs and providers: OpenAI, Google Gemini, Groq-hosted open models; prompt engineering; streaming and batch inference
+- Frameworks: LangChain (including v1 create_agent), LangGraph (stateful graphs, Pydantic state, message reducers)
+- RAG: chunking, embeddings (Hugging Face sentence-transformers), vector search with Pinecone, metadata-based retrieval and routing, multimodal RAG
+- Agents: tool/function calling, custom tools, ReAct loops, router, parallel fan-out/fan-in, and orchestrator-worker patterns; MCP
+- Languages and tooling: Python (including asyncio), FastAPI, Jupyter, uv; TypeScript and Node.js for AI-powered full-stack apps
+
+AI PROJECTS
+- HireReady AI, an AI interview coach (in progress): you upload a job description and your resume, and get a realistic, role-tailored voice mock interview. Planned features: RAG-generated questions drawn from the JD and resume, a LangGraph agent that adapts its follow-up questions, LLM-based answer scoring, and a personalized study plan. Stack: React, TypeScript, Node.js, Python, FastAPI, LangGraph, OpenAI, a vector database, and MongoDB.
+- QueryMind, talk to your database (in progress): you ask a question in plain English, and an agent writes the SQL or MongoDB query, runs it safely, and answers with a table or chart. Planned features: schema-aware text-to-query using RAG over database metadata, a LangGraph plan, check, and self-correct loop, read-only guardrails and row limits, and MCP connectors for PostgreSQL and MongoDB. Stack: React, TypeScript, Node.js, Python, FastAPI, LangGraph, MCP, PostgreSQL, MongoDB, and OpenAI.
+- Multimodal RAG (GitHub: multimodal-rag): a pipeline for chatting with PDFs that contain text, tables, and charts/diagrams. I extract text and tables with PyMuPDF (tables kept as Markdown so rows and columns survive), use a vision LLM to write text summaries of images and charts, embed everything with one sentence-transformers model, and store it in a single Pinecone index with modality and page metadata. At query time, if any visual chunks come back, the question goes to a vision LLM along with the original image; otherwise a text LLM answers. Answers are grounded with page references. Built with LangChain, Pinecone, and Groq.
+- BRD Builder AI: an AI-assisted platform for gathering, validating, and generating Business Requirements Documents. It does requirement gathering through conversational AI, context-aware gap detection, RAG-based retrieval and validation, and structured BRD generation, using LLMs, LangGraph, agentic workflows, embeddings, and MCP.
+- DishGen AI (GitHub: dishgen-ai, live at dishgen-ai.netlify.app): a full-stack TypeScript "personal AI chef" that generates recipes from your cuisine, dietary preferences, and available ingredients, streaming results in real time. Built with React, Vite, Tailwind/shadcn, Node.js/Express, the OpenAI API, and Server-Sent Events.
+
+ENGINEERING FOUNDATION / EXPERIENCE
+- Oracle, Associate Applications Developer, Bangalore (Aug 2019 to Jul 2022): I worked on a banking application, including the onboarding flow for opening account types like Savings, Business Loan, and Vehicle Loan. I built React/Redux/TypeScript UIs and reusable components, worked on Node.js REST APIs, wrote Jasmine/Jest tests, and did code reviews. I received Oracle India's "Power of One" award for improving the Oracle FLEXCUBE onboarding application's user interface.
+- TEKsystems, Senior Software Engineer (from Jul 2022), on client engagements:
+  - Best Western, BestREV Revenue Optimization Platform (Jul 2022 to Feb 2024): a full-stack hotel revenue analytics application. I built React dashboards and a Node.js GraphQL API (Apollo, Prisma, Pothos, Express), and worked on authentication, role-based access, data processing pipelines, and CI/CD on AWS.
+  - Adobe, Data Migration (from Mar 2024): a full-stack application for migrating and syncing data from multiple CRMs into a central CRM, built with React/TypeScript (React Spectrum), Node.js, Azure Function Apps, and Azure Cosmos DB, plus third-party API integrations. I also worked on a DMN-based business rule engine.
+  - I received TEKsystems' "GRIT Award".
+- Core stack: TypeScript, JavaScript, React, Node.js, Express, GraphQL, REST APIs, MongoDB, PostgreSQL, AWS, Azure, Docker, Git, Jest/Jasmine.
+This is the engineering foundation I bring to AI work: APIs, scalable services, integrations, testing, and cloud deployment.
+
+EDUCATION
+Master of Computer Applications (MCA), National Institute of Technology, Tiruchirappalli (NIT Trichy), 2016 to 2019.
+Certifications: "What is Generative AI?" (LinkedIn, 2025); "Server-side Development with NodeJS, Express and MongoDB" (Coursera, 2021).
+
+HOW I WORK
+I'm naturally curious and I learn by building. Whether it's a new AI workflow, a developer tool, or a full-stack app, I like to understand how things work under the hood and turn ideas into working products. I enjoy solving complex engineering problems, designing clean architectures, and building products that are reliable and user-friendly. I've mentored teammates, done code reviews, and worked closely with product owners, designers, and QA in agile teams.
+
+WHAT I'M LOOKING FOR
+I'm looking for AI Engineer or GenAI-focused software engineering roles where I can build production-ready LLM applications (RAG, agents, AI-powered products) and use my full-stack and cloud experience to make them scalable and reliable.
+
+CONTACT & LINKS
+- GitHub: https://github.com/CodingWithSanjeet
+- Portfolio: https://sanjeet-kumar-nitt.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/ksanjeet/
+- Email: sanjeetkumar.nitt@gmail.com
